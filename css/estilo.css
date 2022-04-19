@@ -5,22 +5,32 @@
 body {
     background-color: #e5e5e5;
     text-align: center;
+    margin: 0;    
 }
 
 header {
-    
+    background-color: #757fb2;
+    display: flex;
+    text-align: left;    
+    align-items: center;    
+}
+
+img {
+    content: url('https://api.iconify.design/arcticons/cryptomator.svg?color=%23f3f5fc&height=130');
 }
 
 h1 {
-    
+    color: #f3f5fc;
+    font-size: 3em;   
 }
 
 h2 {
+    color: #757fb2;
     text-transform: lowercase;
-    font-style: italic;    
+    font-style: italic;
 }
 
-section {    
+section {
     display: flex;
     flex-direction: column;
 }
@@ -36,16 +46,20 @@ textarea {
     line-height: 150%;
     color: #0A3871;
 }
-textarea:focus, input:focus, select:focus {
+
+textarea:focus,
+input:focus,
+select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-} 
+}
+
 #input {
     background-color: #e5e5e5;
-    border-radius: 24px;        
+    border-radius: 24px;
     border-style: none;
-    
+
 }
 
 #result {
@@ -53,6 +67,7 @@ textarea:focus, input:focus, select:focus {
     border-radius: 24px;
     border-style: none;
 }
+
 button {
     background: #0A3871;
     border-radius: 24px;
@@ -60,5 +75,15 @@ button {
     height: 67px;
     font-size: 26px;
     color: #fff;
-        
+
+}
+
+footer {
+    background-color: #757fb2;
+    color: #f3f5fc;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
