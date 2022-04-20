@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <img src="" alt="">
-        <h1>Cripfy</h1>
+        <div class="logo">
+            <img src="https://api.iconify.design/arcticons/cryptomator.svg?color=%23f3f5fc&height=120"
+                alt="cripfy logo">
+            <h1>Cripfy</h1>
+        </div>
     </header>
     <section>
-        <h2>Criptografe e descriptografe texto</h2>
-        <div class="campos">
-            <textarea name="" id="input" cols="30" rows="10" placeholder="Digite seu texto aqui" autofocus></textarea>
-            <div id="result">Não há textos à exibir</div>
+        <div class="texto-a-criptografar">
+            <!-- <input type="text" placeholder="Digite aqui seu texto"> -->
+            <textarea name="" id="" cols="30" rows="10" placeholder="Digite aqui seu texto"></textarea>
+            <div class="botoes">
+                <button>Criptografar</button>
+                <button>Descriptografar</button>
+            </div>
         </div>
-        <div class="botoes">
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
+        <div class="texto-resultado">
+            <img src="img/high.svg" alt="">
+            <h3>Nenhum texto à ser exibido</h3>
+            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
     </section>
     <footer>
