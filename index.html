@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">    
     <title>Document</title>
 </head>
 
@@ -21,13 +21,13 @@
     <section>
         <div class="texto-a-criptografar">
             <!-- <input type="text" placeholder="Digite aqui seu texto"> -->
-            <textarea name="" id="" cols="30" rows="10" placeholder="Digite aqui seu texto"></textarea>
+            <textarea name="texto_de_entrada" id="texto_de_entrada" cols="30" rows="10" placeholder="Digite aqui seu texto" required autofocus></textarea>
             <div class="botoes">
-                <button>Criptografar</button>
-                <button>Descriptografar</button>
+                <button id="cript_bt">Criptografar</button>
+                <button id="decript_bt">Descriptografar</button>
             </div>
         </div>
-        <div class="texto-resultado">
+        <div id="t_result" class="texto-resultado">
             <img src="img/high.svg" alt="">
             <h3>Nenhum texto à ser exibido</h3>
             <p>Digite um texto que você deseja criptografar ou descriptografar</p>
@@ -36,6 +36,7 @@
     <footer>
         <p>Desenvolvido por Aelmajan Azevedo</p>
     </footer>
+    <script src="js/escript.js"></script>    
 </body>
 
 </html>
