@@ -1,8 +1,8 @@
-var bt1 = document.getElementById("cript_bt");
+const bt1 = document.getElementById("cript_bt");
 bt1.addEventListener("click", criptografar);
-var bt2 = document.getElementById("decript_bt");
+const bt2 = document.getElementById("decript_bt");
 bt2.addEventListener("click", descriptografar);
-var bt3 = document.getElementById("bt_copy").style.value = "none";
+const bt3 = document.getElementById("bt_copy").style.value = "none";
 var txtEntrada = document.getElementById("texto_de_entrada");
 var txtSaida = document.getElementById("t_result").value;
 
