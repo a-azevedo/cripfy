@@ -1,47 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Document</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-    <header>
-        <div class="logo">
-            <img src="https://api.iconify.design/arcticons/cryptomator.svg?color=%23f3f5fc&height=80" alt="cripfy logo">
-            <h1>Cripfy</h1>
-        </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/text_area_style.css">
+
+    <title>Cripfy</title>
+  </head>
+  <body>
+    <header class="mb-3">
+        <nav class="navbar justify-content-center navbar-light bg-primary">
+            <a class="navbar-brand d-flex" href="#">
+              <img src="img/droidfs.svg" width="60" height="60" class="d-inline-block align-top" alt="">
+              <h1 class="text-white">Cripfy</h1>
+            </a>
+          </nav>
     </header>
-    <main>
-        <section class="area_de_texto">
-            <textarea name="texto_de_entrada" id="texto_de_entrada" class="texto" rows="10" cols="30"
-                placeholder="Digite aqui seu texto" required autofocus></textarea>
-            <div class="botoes">
-                <button id="cript_bt" class="botao">Criptografar</button>
-                <button id="decript_bt" class="botao">Descriptografar</button>
+    <main class="container bg-light">
+        <section class="d-flex flex-column">
+            <div>
+                <textarea class="area_de_texto" id="texto_de_entrada"></textarea>
+            </div>
+            <div class="d-flex flex-wrap justify-content-around my-5">
+                <button id="cript_bt" type="button" class="btn btn-primary m-1 w-50">Criptografar</button>
+                <button id="decript_bt" type="button" class="btn btn-primary m-1 w-50">Descriptografar</button>                
             </div>
 
-            <!--<div id="t_result" class="texto-resultado">
-                <img src="img/high.svg" alt="">
-                <h3>Nenhum texto à ser exibido</h3>
-                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-                <button id="bt_copy">Copiar</button>
-            </div>-->
         </section>
     </main>
-    <footer>
+    <footer class="container bg-primary py-5 text-center text-white">
         <p>Desenvolvido por Aelmajan Azevedo</p>
     </footer>
-    <script src="js/script.js"></script>
-</body>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
